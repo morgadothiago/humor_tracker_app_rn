@@ -4,14 +4,13 @@ import { Styles } from "./styles"
 
 interface ButtonProps {
   title: string
-  onPress?: (name?: string) => void
-
+  onPress?: () => void
 
 }
 
-export const Button = ({ title, onPress, ...rest }: ButtonProps) => {
+export const Button = ({ title, onPress }: ButtonProps) => {
   return (
-    <TouchableOpacity onPress={() => onPress && onPress()} style={[Styles.container]} >
+    <TouchableOpacity onPress={onPress} style={[Styles.container]} >
       <Text style={Styles.text}>{title}</Text>
     </TouchableOpacity>
   )
