@@ -16,7 +16,7 @@ export const RootStack = () => {
     >
       <Stack.Screen name="Home" component={Home} />
       <Stack.Screen name="Details" component={Details} />
-      <Stack.Screen name="SetUserNamePage" component={SetUserNamePage} />
+      <Stack.Screen name="SetUserNamePage" component={SetUserNamePage as any} />
     </Stack.Navigator>
   );
 }
