@@ -21,6 +21,10 @@ export const Home = () => {
       <Pressable onPress={() => navigation.navigate('Details', { rate: 5 })}>
         <Text>Go to Details</Text>
       </Pressable>
+
+      <Pressable onPress={() => navigation.navigate('SetUserNamePage')}>
+        <Text>Go to Set User name details</Text>
+      </Pressable>
     </View>
   );
 }

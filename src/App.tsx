@@ -1,21 +1,13 @@
-import { SafeAreaView } from "react-native-safe-area-context"
-import { StyleSheet } from "react-native"
-
+import { View } from "react-native"
 import { Routes } from "./routes/routes"
 import { StatusBar } from "react-native"
 
 export default function App() {
   return (
-    <SafeAreaView style={styles.container}>
+    <View style={{ flex: 1 }}>
       <StatusBar barStyle="dark-content" />
       <Routes />
-    </SafeAreaView>
+    </View>
   )
 }
 
-export const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-
-  }
-})
