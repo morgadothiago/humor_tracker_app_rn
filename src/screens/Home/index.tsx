@@ -6,6 +6,8 @@ import { TNavigationProps } from "@/routes/Stack";
 import { Header } from "@/shared/components/header";
 
 import { styles } from "./styles";
+import { Footer } from "@/shared/components/footer";
+import { Input } from "@/shared/components/Input";
 
 export const Home = () => {
   const navigation = useNavigation<TNavigationProps>();
@@ -15,15 +17,17 @@ export const Home = () => {
     <View style={styles.container}>
       <Header name="" />
 
+      <View style={{ flex: 1 }} />
 
-      <Text style={styles.title}>Home Screen</Text>
-      <Pressable onPress={() => navigation.navigate('Details', { rate: 5 })}>
-        <Text>Go to Details</Text>
-      </Pressable>
 
-      <Pressable onPress={() => navigation.navigate('SetUserNamePage')}>
-        <Text>Go to Set User name details</Text>
-      </Pressable>
+      <Footer>
+        <Input label="Nome" asButton onPress={() => navigation.navigate('SetUserNamePage')}>
+          <Text style={styles.title}>Home Screen</Text>
+
+        </Input>
+      </Footer>
+
+
     </View>
   );
 }

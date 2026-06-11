@@ -29,7 +29,11 @@ export const RootStack = () => {
         }
 
       }}
-      screenLayout={({ children }) => <SafeAreaView style={{ flex: 1 }}>{children}</SafeAreaView>}
+      screenLayout={({ children }) => (
+        <SafeAreaView style={{ flex: 1 }} edges={['top', 'left', 'right']}>
+          {children}
+        </SafeAreaView>
+      )}
     >
       <Stack.Screen name="Home" component={Home} />
 

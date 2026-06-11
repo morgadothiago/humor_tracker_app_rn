@@ -1,8 +1,9 @@
-import { Text, View, } from "react-native";
+import { Text, TextInput, View, } from "react-native";
 
 
 
 import { styles } from "./styles";
+import { Input } from "@/shared/components/Input";
 
 
 
@@ -10,7 +11,13 @@ export const SetUserNamePage = () => {
 
   return (
     <View style={styles.container}>
-      <Text>Set User Name Details Screen...</Text>
+      <Input label="Nome">
+        <TextInput
+
+
+        />
+
+      </Input>
 
     </View>
   );
