@@ -16,7 +16,7 @@ export const Home = () => {
 
   return (
     <View style={styles.container}>
-      <Header name="" />
+      <Header name="Thiago Morgado" />
 
       <View style={{ flex: 1 }} />
 

@@ -1,22 +1,20 @@
+import { StylesThemes } from "@/shared/global/theme"
 import { StyleSheet } from "react-native"
 
-export const Styles = StyleSheet.create({
+export const styles = StyleSheet.create({
   container: {
-    flexDirection: "row",
+    padding: 12,
+    backgroundColor: StylesThemes.colors.primary,
     alignItems: "center",
     justifyContent: "center",
-    paddingVertical: 12,
-    paddingHorizontal: 24,
     borderRadius: 8,
-    backgroundColor: "#007bff",
-    marginTop: 16,
   },
-  disabledButton: {
-    backgroundColor: "#ccc",
+  buttonPressed: {
+    opacity: 0.8,
   },
-  text: {
-    color: "#fff",
-    fontSize: 16,
-    fontWeight: "bold",
+  buttonText: {
+    fontSize: StylesThemes.fonts.size.body,
+    fontFamily: StylesThemes.fonts.family.regular,
+    color: StylesThemes.colors.primaryText,
   },
 })

@@ -1,17 +1,21 @@
 import { Pressable, Text, TouchableOpacity } from "react-native"
-import { Styles } from "./styles"
+import { styles } from "./styles"
 
 
 interface ButtonProps {
-  title: string
-  onPress?: () => void
-
+  children?: React.ReactNode
+  buttonText?: string
 }
 
-export const Button = ({ title, onPress }: ButtonProps) => {
+export const Button = ({ children, buttonText }: ButtonProps) => {
   return (
-    <TouchableOpacity onPress={onPress} style={[Styles.container]} >
-      <Text style={Styles.text}>{title}</Text>
-    </TouchableOpacity>
+    <Pressable style={({ pressed }) => ({
+      ...styles.container,
+      ...(pressed ? styles.buttonPressed : {})
+    })}>
+      {children}
+
+      {!children && <Text style={styles.buttonText}>{buttonText}</Text>}
+    </Pressable>
   )
 }

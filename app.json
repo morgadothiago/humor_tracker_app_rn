@@ -1,14 +1,17 @@
 {
   "expo": {
     "name": "humor_tracker",
-    "slug": "humor_tracker",
+    "slug": "humortacker",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.thiagomorgado.humor-tracker"
+      "bundleIdentifier": "com.thiagomorgado.humor-tracker",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -26,6 +29,12 @@
     "plugins": [
       "expo-font",
       "expo-splash-screen"
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "290ab310-d29a-4228-8dd4-249ed09bb4b4"
+      }
+    },
+    "owner": "thiagomorgado"
   }
 }

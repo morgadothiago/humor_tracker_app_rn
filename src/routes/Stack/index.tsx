@@ -69,7 +69,7 @@ export const RootStack = () => {
           name="SetUserNamePage"
           component={SetUserNamePage}
           options={{
-            sheetAllowedDetents: [0.4, 0.6]
+            sheetAllowedDetents: [0.4]
           }}
         />
       </Stack.Group>
