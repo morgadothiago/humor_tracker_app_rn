@@ -39,9 +39,25 @@ export const RootStack = () => {
 
       <Stack.Group screenOptions={{
         presentation: 'formSheet',
-        contentStyle: {},
+        contentStyle: {
+          height: '100%'
+        },
         sheetCornerRadius: 24,
-      }} >
+
+      }}
+        screenLayout={({ children }) => (
+          <SafeAreaView
+            style={{
+              flex: 1,
+              padding: 16,
+              backgroundColor: StylesThemes.colors.paper
+            }}
+            edges={['left', 'right']}>
+            {children}
+          </SafeAreaView>
+        )}
+
+      >
         <Stack.Screen
           name="Details"
           component={Details}
