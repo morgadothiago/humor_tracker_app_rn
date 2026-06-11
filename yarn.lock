@@ -552,6 +552,11 @@
     "@babel/helper-string-parser" "^7.29.7"
     "@babel/helper-validator-identifier" "^7.29.7"
 
+"@expo-google-fonts/inter@^0.4.2":
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/@expo-google-fonts/inter/-/inter-0.4.2.tgz#2d37ffb1cb16600cff616b6c4c0efee9b6c47c28"
+  integrity sha512-syfiImMaDmq7cFi0of+waE2M4uSCyd16zgyWxdPOY7fN2VBmSLKEzkfbZgeOjJq61kSqPBNNtXjggiQiSD6gMQ==
+
 "@expo/cli@^56.1.14":
   version "56.1.14"
   resolved "https://registry.yarnpkg.com/@expo/cli/-/cli-56.1.14.tgz#f999727e65a6f85e47c5476e865a43deb71aa9ad"
@@ -1868,6 +1873,13 @@ expo-font@~56.0.5:
   dependencies:
     fontfaceobserver "^2.1.0"
 
+expo-font@~56.0.6:
+  version "56.0.6"
+  resolved "https://registry.yarnpkg.com/expo-font/-/expo-font-56.0.6.tgz#a2b0100363c2109b16c71167502381714869c0fc"
+  integrity sha512-D4s72Aei844C2s8Vy61qMr6wLEjv6BMrXA1oyRQ0x8LJBbpm5gyogUohc0lABUURVLCqsnBIDdztegl3hktmmg==
+  dependencies:
+    fontfaceobserver "^2.1.0"
+
 expo-keep-awake@~56.0.3:
   version "56.0.3"
   resolved "https://registry.yarnpkg.com/expo-keep-awake/-/expo-keep-awake-56.0.3.tgz#88991b4859c77af73cf68c500839a18fe5d8febe"
@@ -1901,6 +1913,15 @@ expo-server@^56.0.5:
   version "56.0.5"
   resolved "https://registry.yarnpkg.com/expo-server/-/expo-server-56.0.5.tgz#601e9a80d166cb65b35f6a38e7a61dc6de12b91d"
   integrity sha512-SmM2p2g3Jrktpiazcst+OxhjSzOHXKAY4BPURHYHXvApzzoybMmrNF4IEZ8DKZ145BhSe4ydAmlEFCRTsdtgUQ==
+
+expo-splash-screen@~56.0.10:
+  version "56.0.10"
+  resolved "https://registry.yarnpkg.com/expo-splash-screen/-/expo-splash-screen-56.0.10.tgz#278293531e66b7841eb3dff12ed303e4f1343e27"
+  integrity sha512-vDIlo8hzt9HlCZQ0kSY66v83D1WEXOJbVMeyPDfXDu9tbDdPMNUyDpi4WGJXikAjxnAKfbt5Mv5NnEbxINy+VA==
+  dependencies:
+    "@expo/config-plugins" "~56.0.8"
+    "@expo/image-utils" "^0.10.1"
+    xml2js "0.6.0"
 
 expo-status-bar@~56.0.4:
   version "56.0.4"

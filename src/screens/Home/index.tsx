@@ -17,7 +17,7 @@ export const Home = () => {
 
   return (
     <View style={styles.container}>
-      <Text>Home Screen</Text>
+      <Text style={styles.title}>Home Screen</Text>
       <Pressable onPress={() => navigation.navigate('Details', { rate: 5 })}>
         <Text>Go to Details</Text>
       </Pressable>
