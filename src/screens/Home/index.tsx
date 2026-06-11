@@ -1,15 +1,11 @@
 import { Pressable, Text, View } from "react-native";
 import { useNavigation } from "@react-navigation/native";
-import type { NativeStackNavigationProp } from "@react-navigation/native-stack";
 
-import { styles } from "./styles";
 
 import { TNavigationProps } from "@/routes/Stack";
+import { Header } from "@/shared/components/header";
 
-
-
-
-
+import { styles } from "./styles";
 
 export const Home = () => {
   const navigation = useNavigation<TNavigationProps>();
@@ -17,6 +13,9 @@ export const Home = () => {
 
   return (
     <View style={styles.container}>
+      <Header name="" />
+
+
       <Text style={styles.title}>Home Screen</Text>
       <Pressable onPress={() => navigation.navigate('Details', { rate: 5 })}>
         <Text>Go to Details</Text>

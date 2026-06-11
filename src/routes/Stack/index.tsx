@@ -4,6 +4,7 @@ import { Details } from '@/screens/Details';
 import { SetUserNamePage } from '@/screens/SetUserNameDetails';
 import { RouteProp } from '@react-navigation/native';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { StylesThemes } from '@/shared/global/theme';
 
 
 type RootStackParamList = {
@@ -22,6 +23,10 @@ export const RootStack = () => {
       initialRouteName="Home"
       screenOptions={{
         headerShown: false,
+        contentStyle: {
+          backgroundColor: StylesThemes.colors.background
+
+        }
 
       }}
       screenLayout={({ children }) => <SafeAreaView style={{ flex: 1 }}>{children}</SafeAreaView>}
